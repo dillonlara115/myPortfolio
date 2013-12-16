@@ -1,4 +1,7 @@
 Portfolio::Application.routes.draw do
+  root 'static_pages#home'
+  match '/blog', to: 'static_pages#blog', via: 'get'
+  match '/work', to: 'static_pages#work', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

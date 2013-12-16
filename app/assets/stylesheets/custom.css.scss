@@ -1,0 +1,55 @@
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700,300);
+@font-face { font-family: 'Glyphicons Halflings'; src: url(asset_path("fonts/glyphicons-halflings-regular.eot")); src: url(asset_path("fonts/glyphicons-halflings-regular.woff")) format("woff"), url(asset_path("fonts/glyphicons-halflings-regular.ttf")) format("truetype"), url(asset_path("fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular")) format("svg") }
+
+nav, footer h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 10px;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  &:hover {
+  	text-decoration: none;
+  }
+}
+
+/* header */
+
+header{
+	background-color: #666;
+	height: 400px;
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #999;
+  color: #666;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
