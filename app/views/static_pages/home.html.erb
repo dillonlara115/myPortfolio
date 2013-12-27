@@ -1,12 +1,86 @@
 <% provide(:title, 'Home') %>
-<h1>StaticPages#home</h1>
-<p>Bacon ipsum dolor sit amet shoulder bresaola meatloaf, turducken short ribs sirloin kevin pork loin jowl ribeye tongue. Ground round shank boudin, pork pork chop frankfurter chicken doner shankle spare ribs brisket tri-tip pig tenderloin sirloin. Tri-tip chicken cow, turkey salami beef boudin shankle andouille. Salami short loin shankle hamburger ham hock capicola. Chicken ham fatback doner t-bone.</p>
+<h2 class="top">Web Designer | Father | Husband | Musician</h2>
+<p>dillonlara115@gmail.com</p>
+<p><a href="http://www.github.com/dillonlara115">github.com/dillonlara115</a></p>
+<section id="about">
+	<h2>About</h2>
+	<p>I'm a 27 year old freelance web designer who recently graduated from Full Sail University with a Bachelors of Science degree in Web Design and Development. I have been working on web design for over 14 years and first started making websites when I was in 5th grade. Ever since then I had taught myself everything about web and graphic design until college where I began to learn about the art of web design and the "correct" way to do things. I'm currently in search of projects whether it be something small for a client or working with a larger business.</p>
+</section>
 
-<p>
-Shankle boudin capicola chicken, spare ribs brisket filet mignon ground round. Cow doner kevin ground round tri-tip sausage. Capicola ball tip hamburger tongue prosciutto jerky pork loin fatback pork belly salami meatloaf bacon corned beef biltong. Chuck turducken flank doner, short loin fatback kielbasa kevin. Corned beef turkey boudin, tongue biltong doner pork pastrami rump t-bone pork chop capicola. Ground round fatback filet mignon ham hock short ribs.</p>
 
-<p>
-Shankle boudin capicola chicken, spare ribs brisket filet mignon ground round. Cow doner kevin ground round tri-tip sausage. Capicola ball tip hamburger tongue prosciutto jerky pork loin fatback pork belly salami meatloaf bacon corned beef biltong. Chuck turducken flank doner, short loin fatback kielbasa kevin. Corned beef turkey boudin, tongue biltong doner pork pastrami rump t-bone pork chop capicola. Ground round fatback filet mignon ham hock short ribs.</p>
+<h2>Skills</h2>
+<h3>web design</h3>
+<p>Responsive Web Design / UX Testing / Image Optimization / Form Building / Video Editing / Audio Editing</p>
+<h3>software</h3>
+<p>Adobe Illustrator / Adobe Photoshop / Adobe Flash / Adobe FlashBuilder / Adobe Fireworks / Adobe Dreamweaver / Sublime Text 2 / Coda 2 / SequelPro / Microsoft Office Suite / iWork 2009 / Macintosh OS 10.X / Windows 95 - 7</p>
+<section id="work">
+	<h1>Work</h1>
+	<p>Bacon ipsum dolor sit amet shoulder bresaola meatloaf, turducken short ribs sirloin kevin pork loin jowl ribeye tongue. Ground round shank boudin, pork pork chop frankfurter chicken doner shankle spare ribs brisket tri-tip pig tenderloin sirloin. Tri-tip chicken cow, turkey salami beef boudin shankle andouille. Salami short loin shankle hamburger ham hock capicola. Chicken ham fatback doner t-bone.</p>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <%= image_tag('posterthmb.jpg') %>
+          <div class="caption">
+            <h3>The Jaguar Shark Poster</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <%= image_tag('visionthmb.jpg') %>
+          <div class="caption">
+            <h3>Vision Air App Web Page</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <%= image_tag('wcmothmb.jpg') %>
+          <div class="caption">
+            <h3>WCMO Webpage</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <%= image_tag('oldportthmb.jpg') %>
+          <div class="caption">
+            <h3>My Prior Portfolio</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
-<p>
-Shankle boudin capicola chicken, spare ribs brisket filet mignon ground round. Cow doner kevin ground round tri-tip sausage. Capicola ball tip hamburger tongue prosciutto jerky pork loin fatback pork belly salami meatloaf bacon corned beef biltong. Chuck turducken flank doner, short loin fatback kielbasa kevin. Corned beef turkey boudin, tongue biltong doner pork pastrami rump t-bone pork chop capicola. Ground round fatback filet mignon ham hock short ribs.</p>
+<section id="contact">
+<h1>Contact</h1>
+	<form class="contactform" action="#" method="post" name="contactform">
+        <ul class="contact">
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="enter full name" required>
+            </li>
+            <li>
+                <label for="email">Email address:</label>
+                <input type="email" name="email" placeholder="enter full email address" required>
+            </li>
+            <li>
+                <label for="message">Message:</label>        
+                <textarea rows="6" cols="50" name="message" placeholder="enter your message here" required></textarea>
+            </li>
+            <li>
+               <button class="submit" type="submit">Send</button>
+            </li>
+        </ul>
+    </form>
+</section>

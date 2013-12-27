@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 
 group :development, :test do
 	gem 'sqlite3'
