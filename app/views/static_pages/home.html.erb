@@ -1,70 +1,129 @@
 <% provide(:title, 'Home') %>
-<h2 class="top">Web Designer | Father | Husband | Musician</h2>
-<p>dillonlara115@gmail.com</p>
-<p><a href="http://www.github.com/dillonlara115">github.com/dillonlara115</a></p>
+<div class="top">
+
+    <%= image_tag('me.jpg', size: "300", class: 'img-circle')  %>
+
+    <h2>Web Designer | Father | Husband | Musician</h2>
+    <p>
+        <%= link_to "Resume", 'https://dl.dropboxusercontent.com/u/987239/dillonLaraResume.pdf', target: '_blank' %><br />
+        <%= mail_to "dillonlara115@gmail.com" %><br />
+        <%= link_to "github.com/dillonlara115", "http://www.github.com/dillonlara115" %>
+    </p>
+</div>
 <section id="about">
 	<h2>About</h2>
-	<p>I'm a 27 year old freelance web designer who recently graduated from Full Sail University with a Bachelors of Science degree in Web Design and Development. I have been working on web design for over 14 years and first started making websites when I was in 5th grade. Ever since then I had taught myself everything about web and graphic design until college where I began to learn about the art of web design and the "correct" way to do things. I'm currently in search of projects whether it be something small for a client or working with a larger business.</p>
+	<p>My name is Dillon and currently I'm a web designer at MidwayUSA in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  While I am currently employed, I'm always looking for new and exciting opportunities as well as just wanting to build my portfolio.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
 </section>
 
 
 <h2>Skills</h2>
-<h3>web design</h3>
-<p>Responsive Web Design / UX Testing / Image Optimization / Form Building / Video Editing / Audio Editing</p>
-<h3>software</h3>
-<p>Adobe Illustrator / Adobe Photoshop / Adobe Flash / Adobe FlashBuilder / Adobe Fireworks / Adobe Dreamweaver / Sublime Text 2 / Coda 2 / SequelPro / Microsoft Office Suite / iWork 2009 / Macintosh OS 10.X / Windows 95 - 7</p>
+<h3>Web Design</h3>
+<p>Responsive Web Design / UI Testing / Image Optimization / Form Building / Video Optimization / Audio Optimization</p>
+<h3>Software</h3>
+<p>Sublime Text 2 / Coda 2 / Adobe Dreamweaver / Adobe Illustrator / Adobe Photoshop / Adobe Flash / Adobe FlashBuilder / Adobe Fireworks /  SequelPro / Microsoft Office Suite / iWork 2009 / Macintosh / Windows / Visual Studio</p>
 <section id="work">
 	<h1>Work</h1>
-	<p>Bacon ipsum dolor sit amet shoulder bresaola meatloaf, turducken short ribs sirloin kevin pork loin jowl ribeye tongue. Ground round shank boudin, pork pork chop frankfurter chicken doner shankle spare ribs brisket tri-tip pig tenderloin sirloin. Tri-tip chicken cow, turkey salami beef boudin shankle andouille. Salami short loin shankle hamburger ham hock capicola. Chicken ham fatback doner t-bone.</p>
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-        <%= image_tag('posterthmb.jpg', width: "100%") %>
-          <div class="caption">
-            <h3>The Jaguar Shark Poster</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+	<p>Below lists some of my more recent work in graphic and web design.  Clicking on the buttons below will direct you to either a screenshot of the design or to a live version of the site.</p>
+    <div class='container'>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('poster.png', width: "100%") %>
+              <div class="caption">
+                <h3>The Jaguar Shark Poster</h3>
+                <p>Promotional poster created for my solo music project using Photoshop.</p>
+                <p><a href="#" class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('visionapp2.png', width: "100%") %>
+              <div class="caption">
+                <h3>Vision Air App Web Page</h3>
+                <p>Vision App landing page created for an Air application that I also created.</p>
+                <p><a href="https://dl.dropboxusercontent.com/u/987239/visionPrototype/index.html" class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-        <%= image_tag('visionthmb.jpg', width: "100%") %>
-          <div class="caption">
-            <h3>Vision Air App Web Page</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('zohome2.png', width: "100%") %>
+              <div class="caption">
+                <h3>Zombie Oasis</h3>
+                <p>New hire project for MidwayUSA.</p>
+                <p><a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html"  class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('anthem.png', width: "100%") %>
+              <div class="caption">
+                <h3>Social Spin</h3>
+                <p>This was my final project for school.  It is a social music rating website built using Ruby on Rails.</p>
+                <p><a href="https://github.com/dillonlara115/socialSpin" class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+        </div> <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('wcmo.png', width: "100%") %>
+              <div class="caption">
+                <h3>WCMO Webpage</h3>
+                <p>Webpage created for a class project with different media types.</p>
+                <p><a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html"  class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('anthem.png', width: "100%") %>
+              <div class="caption">
+                <h3>My Prior Portfolio</h3>
+                <p>This was my first crack at responsive web design.  I created a mock-portfolio site for one of my classes.</p>
+                <p><a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('mylist.png', width: "100%") %>
+              <div class="caption">
+                <h3>Mylist</h3>
+                <p>Web app created for class using jQuery mobile.  This is an app for managing lists</p>
+                <p><a href="https://github.com/dillonlara115/myList"  class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+            <%= image_tag('soair.png', width: "100%") %>
+              <div class="caption">
+                <h3>SoAir Mobile Mockups</h3>
+                <p>These are mobile app markups for a fake airline company.  All icons and graphics were created using Photoshop and Illustrator.</p>
+                <p><a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" class="btn btn-primary" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-        <%= image_tag('wcmothmb.jpg', width: "100%") %>
-          <div class="caption">
-            <h3>WCMO Webpage</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-        <%= image_tag('oldportthmb.jpg', width: "100%") %>
-          <div class="caption">
-            <h3>My Prior Portfolio</h3>
-            <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+</section>
+
+<section id="blog">
+    <h1>Blog</h1>
+     <%= link_to "Check out my blog", blog_path, 'data-hover' => 'blog' %>
 </section>
 
 <section id="contact">
 <h1>Contact</h1>
-	<form class="contactform" action="#" method="post" name="contactform">
+<!-- 	<form class="contactform" action="dillonlara115@gmail.com" method="post" name="contactform" enctype="text/plain">
         <ul class="contact">
             <li>
                 <label for="name">Name:</label>
@@ -76,11 +135,40 @@
             </li>
             <li>
                 <label for="message">Message:</label>        
-                <textarea rows="6" cols="50" name="message" placeholder="enter your message here" required></textarea>
+                <textarea rows="6" cols="60" name="message" placeholder="enter your message here" required></textarea>
             </li>
             <li>
                <button class="submit" type="submit">Send</button>
             </li>
         </ul>
+    </form> -->
+
+    <form action="https://docs.google.com/forms/d/1037s7koBFq2OmEHznGFVM3grKq7bijBbOyy_5sxzzME/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="contactform">
+        <ul style="padding-left: 0">
+            <li>
+                <label  for="entry_2108790748">Name:</label>
+                <input type="text" name="entry.2108790748" value="" class="ss-q-short" id="entry_2108790748" dir="auto" aria-label="Name Enter you name in this box " aria-required="true" required="" placeholder="enter full name" title="">
+            </li>  
+
+            <li>
+                <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_389646082"> Email Address:</label>
+                <input type="text" name="entry.389646082"  id="entry_389646082" dir="auto" aria-label="email address enter your email address " aria-required="true" required="" placeholder="enter your email address" title="">
+            </li> 
+            <li>
+                <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_699952664">Message:</label>
+                <textarea name="entry.699952664" rows="8" cols="60" class="ss-q-long" id="entry_699952664" dir="auto" aria-label="Message Enter your message here " aria-required="true" required=""></textarea>
+            </li>     
+            <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]
+">
+            <input type="hidden" name="pageHistory" value="0">
+
+            <input type="hidden" name="fbzx" value="2807431590099083065">
+     
+            <button type="submit"  value="Send" class="submit" >Send </button>
+                
+            
+        </ul>
     </form>
+
+
 </section>
