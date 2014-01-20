@@ -33,7 +33,7 @@
               <div class="caption">
                 <h3>The Jaguar Shark Poster</h3>
                 <p>Promotional poster created for my solo music project using Photoshop.</p>
-                <p><a href="#" class="btn btn-primary" role="button">View</a></p>
+                <p><%= link_to "View", "#", target: "_blank", class: "btn btn-primary", role: "button" %></p>
               </div>
             </div>
           </div>
@@ -43,7 +43,9 @@
               <div class="caption">
                 <h3>Vision Air App Web Page</h3>
                 <p>Vision App landing page created for an Air application that I also created.</p>
-                <p><a href="https://dl.dropboxusercontent.com/u/987239/visionPrototype/index.html" class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/visionPrototype/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
+                 </p>
               </div>
             </div>
           </div>
@@ -55,7 +57,9 @@
               <div class="caption">
                 <h3>Zombie Oasis</h3>
                 <p>New hire project for MidwayUSA.</p>
-                <p><a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html"  class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -65,7 +69,9 @@
               <div class="caption">
                 <h3>Social Spin</h3>
                 <p>This was my final project for school.  It is a social music rating website built using Ruby on Rails.</p>
-                <p><a href="https://github.com/dillonlara115/socialSpin" class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://github.com/dillonlara115/socialSpin", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -76,7 +82,9 @@
               <div class="caption">
                 <h3>WCMO Webpage</h3>
                 <p>Webpage created for a class project with different media types.</p>
-                <p><a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html"  class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -86,7 +94,9 @@
               <div class="caption">
                 <h3>My Prior Portfolio</h3>
                 <p>This was my first crack at responsive web design.  I created a mock-portfolio site for one of my classes.</p>
-                <p><a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -98,7 +108,9 @@
               <div class="caption">
                 <h3>Mylist</h3>
                 <p>Web app created for class using jQuery mobile.  This is an app for managing lists</p>
-                <p><a href="https://github.com/dillonlara115/myList"  class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://github.com/dillonlara115/myList", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -108,7 +120,9 @@
               <div class="caption">
                 <h3>SoAir Mobile Mockups</h3>
                 <p>These are mobile app markups for a fake airline company.  All icons and graphics were created using Photoshop and Illustrator.</p>
-                <p><a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" class="btn btn-primary" role="button">View</a></p>
+                <p>
+                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
+                </p>
               </div>
             </div>
           </div>
@@ -118,7 +132,7 @@
 
 <section id="blog">
     <h1>Blog</h1>
-     <%= link_to "Check out my blog", blog_path, 'data-hover' => 'blog' %>
+     <%= link_to "Check out my blog", controller: "posts", 'data-hover' => 'blog' %>
 </section>
 
 <section id="contact">
