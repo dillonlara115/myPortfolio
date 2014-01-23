@@ -25,83 +25,50 @@
 	<h1>Work</h1>
 	<p>Below lists some of my more recent work in graphic and web design.  Clicking on the buttons below will direct you to either a screenshot of the design or to a live version of the site.</p>
     <div class='container'>
+      <ul id="og-grid" class="og-grid">
+          <li>
+            <a href="https://github.com/dillonlara115/myList" data-largesrc="/assets/mylist.png" data-title="MyList Mobile Site" data-description="Mylist mobile website created using Ruby on Rails and jQuery Mobile." target="_blank">
+              <%= image_tag('mylist.png', alt: "img03", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/soair.png" data-title="SoAir App Design" data-description="Mobile app design for mock airline 'Soair'.  Created using Adobe Illustrator and Photoshop.">
+              <%= image_tag('soair.png', alt: "img03", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="/assets/wcmo.png" data-title="WCMO Website" data-description="Webpage created for a class project with different media types.">
+              <%= image_tag('wcmo.png', alt: "img01", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html" data-largesrc="/assets/zohome2.png" data-title="Zombie Oasis" data-description="New hire project for MidwayUSA.">
+              <%= image_tag('zohome2.png', alt: "img02", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/anthem.png" data-title="My Prior Portfolio" data-description="A prior portfolio design created in one of my classes.  Also my first time practicing responsive web design." target="_blank">
+              <%= image_tag('anthem.png', alt: "img03", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/assets/poster.png" data-title="The Jaguar Shark Poster" data-description="Promotional poster created for my solo music project using Photoshop." target="_blank">
+              <%= image_tag('poster.png', alt: "img01", width: "210px") %>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-largesrc="/assets/visionapp2.png" data-title="Vision Air App Web Page" data-description="Vision App landing page created for an Air application that I also created.">
+              <%= image_tag('visionapp2.png', alt: "img01", width: "210px") %>
+            </a>
+          </li>
+           <li>
+            <a href="/https://github.com/dillonlara115/socialSpin" data-largesrc="/assets/logo.png" data-title="Social Spin Website" data-description="This was my final project for school.  It is a social music rating website built using Ruby on Rails." target="_blank">
+              <%= image_tag('logo.png', alt: "img01", width: "210px") %>
+            </a>
+          </li>
+        </ul>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('poster.png', width: "100%") %>
-              <div class="caption">
-                <h3>The Jaguar Shark Poster</h3>
-                <p>Promotional poster created for my solo music project using Photoshop.</p>
-                <p><%= link_to "View", "#", target: "_blank", class: "btn btn-primary", role: "button" %></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('visionapp2.png', width: "100%") %>
-              <div class="caption">
-                <h3>Vision Air App Web Page</h3>
-                <p>Vision App landing page created for an Air application that I also created.</p>
-                <p>
-                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/visionPrototype/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
-                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('zohome2.png', width: "100%") %>
-              <div class="caption">
-                <h3>Zombie Oasis</h3>
-                <p>New hire project for MidwayUSA.</p>
-                <p>
-                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('anthem.png', width: "100%") %>
-              <div class="caption">
-                <h3>Social Spin</h3>
-                <p>This was my final project for school.  It is a social music rating website built using Ruby on Rails.</p>
-                <p>
-                  <%= link_to "View", "https://github.com/dillonlara115/socialSpin", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('wcmo.png', width: "100%") %>
-              <div class="caption">
-                <h3>WCMO Webpage</h3>
-                <p>Webpage created for a class project with different media types.</p>
-                <p>
-                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('anthem.png', width: "100%") %>
-              <div class="caption">
-                <h3>My Prior Portfolio</h3>
-                <p>This was my first crack at responsive web design.  I created a mock-portfolio site for one of my classes.</p>
-                <p>
-                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-6">
             <div class="thumbnail">
             <%= image_tag('mylist.png', width: "100%") %>
@@ -126,7 +93,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
