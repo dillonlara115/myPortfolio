@@ -130,8 +130,11 @@ nav a:focus {
   text-decoration: none;
 }
 
-#about, #contact, #work, #blog{
+#about, #contact, #work{
   min-height: 300px;
+  padding-top: 5%;
+}
+#blog {
   padding-top: 5%;
 }
 
