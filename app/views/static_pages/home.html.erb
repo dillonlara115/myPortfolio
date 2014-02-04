@@ -1,9 +1,13 @@
 <% provide(:title, 'Home') %>
+<span itemscope itemtype="http://schema.org/Person">
 <div id="top">
+    
+<meta itemprop="url" content="htttp://www.dillonlara.com" />
+<meta itemprop="email" content="dillonlara115@gmail.com" />
 
     <%= image_tag('me.jpg', size: "300", class: 'img-circle', itemprop: "image")  %>
 
-    <h2 itemprop="name">Web Designer | Father | Husband | Musician</h2>
+    <h2 itemprop="alternateName">Web Designer | Father | Husband | Musician</h2>
     <p>
         <%= link_to "Resume", 'https://dl.dropboxusercontent.com/u/987239/dillonLaraResume.pdf', target: '_blank' %><br />
         <%= mail_to "dillonlara115@gmail.com" %><br />
@@ -12,7 +16,7 @@
 </div>
 <section id="about">
 	<h2>About</h2>
-	<p itemprop="description">My name is Dillon and currently I'm a web designer at MidwayUSA in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  While I am currently employed, I'm always looking for new and exciting opportunities as well as just wanting to build my portfolio.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
+	<p itemprop="description">My name is Dillon and currently I'm a <span itemprop="jobTitle">web designer</span> at <span itemprop="worksFor">MidwayUSA </spam>in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  While I am currently employed, I'm always looking for new and exciting opportunities as well as just wanting to build my portfolio.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
 </section>
 
 
@@ -67,33 +71,6 @@
             </a>
           </li>
         </ul>
-
-        <!-- <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('mylist.png', width: "100%") %>
-              <div class="caption">
-                <h3>Mylist</h3>
-                <p>Web app created for class using jQuery mobile.  This is an app for managing lists</p>
-                <p>
-                  <%= link_to "View", "https://github.com/dillonlara115/myList", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-            <%= image_tag('soair.png', width: "100%") %>
-              <div class="caption">
-                <h3>SoAir Mobile Mockups</h3>
-                <p>These are mobile app markups for a fake airline company.  All icons and graphics were created using Photoshop and Illustrator.</p>
-                <p>
-                  <%= link_to "View", "https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html", target: "_blank", class: "btn btn-primary", role: "button" %>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> -->
     </div>
 </section>
 
@@ -104,26 +81,6 @@
 
 <section id="contact">
 <h1>Contact</h1>
-<!-- 	<form class="contactform" action="dillonlara115@gmail.com" method="post" name="contactform" enctype="text/plain">
-        <ul class="contact">
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" name="name" placeholder="enter full name" required>
-            </li>
-            <li>
-                <label for="email">Email address:</label>
-                <input type="email" name="email" placeholder="enter full email address" required>
-            </li>
-            <li>
-                <label for="message">Message:</label>        
-                <textarea rows="6" cols="60" name="message" placeholder="enter your message here" required></textarea>
-            </li>
-            <li>
-               <button class="submit" type="submit">Send</button>
-            </li>
-        </ul>
-    </form> -->
-
     <form action="https://docs.google.com/forms/d/1037s7koBFq2OmEHznGFVM3grKq7bijBbOyy_5sxzzME/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="contactform">
         <ul style="padding-left: 0">
             <li>
@@ -139,17 +96,13 @@
                 <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_699952664">Message:</label>
                 <textarea name="entry.699952664" rows="8" cols="50" class="ss-q-long" id="entry_699952664" dir="auto" aria-label="Message Enter your message here " aria-required="true" required=""></textarea>
             </li>     
-            <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]
-">
+            <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]">
             <input type="hidden" name="pageHistory" value="0">
 
             <input type="hidden" name="fbzx" value="2807431590099083065">
      
-            <button type="submit"  value="Send" class="submit" >Send </button>
-                
-            
+            <button type="submit"  value="Send" class="submit" >Send </button>     
         </ul>
     </form>
-
-
 </section>
+</span>

@@ -185,12 +185,17 @@ nav a:focus {
     padding: 10px;
   }
   label {
-    width: 250px;
-    text-align: right;
+    width: 75%;
+    text-align: left;
     margin-top: 3px;
     display: inline-block;
     float: left;
-    padding: 3px 40px;
+    padding: 3px 0;
+    @media (min-width: 992px){
+      width: 250px;
+      padding: 3px 40px;
+      text-align: right;
+    }
   }
   input {
     border: 1px solid #735A54;
@@ -198,6 +203,10 @@ nav a:focus {
   }
   textarea {
     padding: 5px;
+    max-width: 100%;
+    @media (min-width: 992px){
+
+    }
   }
   button{
     margin-left: 25%;
