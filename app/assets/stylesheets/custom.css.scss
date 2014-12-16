@@ -5,7 +5,7 @@
 @font-face {
 	font-family: 'Glyphicons Halflings';
 	src: url(font-path('glyphicons-halflings-regular.eot') + "?#iefix") format('embedded-opentype'),
-	     url(font-path('glyphicons-halflings-regular.woff')) format('woff'), 
+	     url(font-path('glyphicons-halflings-regular.woff')) format('woff'),
 	     url(font-path('glyphicons-halflings-regular.ttf'))  format('truetype'),
 	     url(font-path('glyphicons-halflings-regular.svg') + "#glyphicons_halflingsregular") format('svg');
 }
@@ -77,12 +77,11 @@ nav {
     a{
       color: #fff;
       position: relative;
+      &:hover {
+          background-color: transparent;
+      }
     }
   }
-}
-
-.nav > li > a:hover {
-  background-color: transparent;
 }
 
 nav a:hover,
@@ -99,26 +98,26 @@ nav a:focus {
   @media screen and (max-width: 780px) {
     border-top: none;
   }
-} 
-
-.link a::before {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  background-color: none;
-  overflow: hidden;
-  padding: 10px 0;
-  max-width: 0;
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  content: attr(data-hover);
-  -webkit-transition: max-width 0.5s;
-  -moz-transition: max-width 0.5s;
-  transition: max-width 0.5s;
-  @media screen and (max-width: 780px) {
-    top: 0px;
+  &:before {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    background-color: none;
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+    @media screen and (max-width: 780px) {
+      top: 0px;
+    }
   }
 }
+
 
 .link a:hover::before,
 .link a:focus::before {
@@ -159,7 +158,7 @@ nav a:focus {
   }
 }
 .btn-primary{
-  background-color: $linkColor; 
+  background-color: $linkColor;
   border-color: $linkColor;
   &:hover, &:active, &:focus {
     background-color: lighten($linkColor, 10%);
@@ -204,9 +203,6 @@ nav a:focus {
   textarea {
     padding: 5px;
     max-width: 100%;
-    @media (min-width: 992px){
-
-    }
   }
   button{
     margin-left: 25%;
@@ -305,39 +301,37 @@ footer {
   position: relative;
   z-index: 1;
   color: #735A54;
-}
-
-.hi-icon:after {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  content: '';
-  -webkit-box-sizing: content-box; 
-  -moz-box-sizing: content-box; 
-  box-sizing: content-box;
-}
-
-.hi-icon:before {
-  font-family: 'FontAwesome';
-  speak: none;
-  font-size: 32px;
-  line-height: 90px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  top: -23px;
+  &:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  &:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-size: 32px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    top: -23px;
+  }
 }
 
 
 /* Effect 4 */
 .hi-icon-effect-4 .hi-icon {
-  box-shadow: 0 0 0 4px #735A54;  
+  box-shadow: 0 0 0 4px #735A54;
 }
 .hi-icon:hover {
   box-shadow: 0 0 0 0 #735A54;
