@@ -21,7 +21,6 @@ $linkColor: #733E31;
 body {
   padding-top: 70px;
   line-height: 2.5em;
-  letter-spacing: .75px;
 }
 a {
   color: $linkColor;
@@ -133,6 +132,11 @@ nav a:focus {
   min-height: 300px;
   padding-top: 50px;
 }
+
+#about p {
+
+}
+
 #blog {
   padding-top: 50px;
 }
@@ -284,6 +288,8 @@ footer {
   }
 }
 
+
+// social icons
 .hi-icon-wrap {
   text-align: center;
   margin: 0 auto;
@@ -301,6 +307,10 @@ footer {
   position: relative;
   z-index: 1;
   color: #735A54;
+  box-shadow: 0 0 0 4px #735A54;
+  -webkit-transition: box-shadow 0.2s, color 0.2s;
+  -moz-transition: box-shadow 0.2s, color 0.2s;
+  transition: box-shadow 0.2s, color 0.2s;
   &:after {
     pointer-events: none;
     position: absolute;
@@ -311,12 +321,17 @@ footer {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+    top: -4px;
+    left: -4px;
+    padding: 0;
+    z-index: 10;
+    border: 4px dashed #735A54;
   }
   &:before {
     font-family: 'FontAwesome';
     speak: none;
     font-size: 32px;
-    line-height: 90px;
+    line-height: 92px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -326,31 +341,7 @@ footer {
     position: relative;
     top: -23px;
   }
+  &:hover {
+    box-shadow: 0 0 0 0 #735A54;
+  }
 }
-
-
-/* Effect 4 */
-.hi-icon-effect-4 .hi-icon {
-  box-shadow: 0 0 0 4px #735A54;
-}
-.hi-icon:hover {
-  box-shadow: 0 0 0 0 #735A54;
-}
-.hi-icon-effect-4a .hi-icon {
-  -webkit-transition: box-shadow 0.2s, color 0.2s;
-  -moz-transition: box-shadow 0.2s, color 0.2s;
-  transition: box-shadow 0.2s, color 0.2s;
-}
-
-.hi-icon-effect-4 .hi-icon:before {
-  line-height: 92px;
-}
-
-.hi-icon-effect-4 .hi-icon:after {
-  top: -4px;
-  left: -4px;
-  padding: 0;
-  z-index: 10;
-  border: 4px dashed #735A54;
-}
-
