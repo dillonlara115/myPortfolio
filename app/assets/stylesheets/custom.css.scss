@@ -1,19 +1,11 @@
 /* IMPORTS */
 @import "bootstrap";
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700,300);
-@font-face {
-	font-family: 'Glyphicons Halflings';
-	src: url(font-path('glyphicons-halflings-regular.eot') + "?#iefix") format('embedded-opentype'),
-	     url(font-path('glyphicons-halflings-regular.woff')) format('woff'),
-	     url(font-path('glyphicons-halflings-regular.ttf'))  format('truetype'),
-	     url(font-path('glyphicons-halflings-regular.svg') + "#glyphicons_halflingsregular") format('svg');
-}
+@import url(//fonts.googleapis.com/css?family=Raleway:400,600,700,300);
 
 /* VARIABLES */
 
 $linkColor: #733E31;
-
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -68,7 +60,7 @@ nav, h1, h2, h3, h4, h5, h6, label {
 	border: none;
 }
 
-nav {
+.header-nav {
   text-transform: uppercase;
   background-color: #F38268;
   li {
@@ -133,10 +125,6 @@ nav a:focus {
   padding-top: 50px;
 }
 
-#about p {
-
-}
-
 #blog {
   padding-top: 50px;
 }
@@ -194,7 +182,7 @@ nav a:focus {
     display: inline-block;
     float: left;
     padding: 3px 0;
-    @media (min-width: 992px){
+    @media (min-width: 48em){
       width: 250px;
       padding: 3px 40px;
       text-align: right;
@@ -268,7 +256,9 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #735A54;
   color: #666;
-  height: 400px;
+  @media (max-width: 48em) {
+    text-align: center;
+  }
   a {
     color: #555;
     &:hover {
@@ -279,23 +269,30 @@ footer {
     float: left;
   }
   ul {
-    float: right;
+    padding: 0;
     list-style: none;
+    display: inline-block;
+    @media (min-width: 48em) {
+      float: right;
+    }
     li {
-      float: left;
-      margin-left: 10px;
+      display: inline-block;
+      @media (min-width: 48em) {
+        float: left;
+        margin-left: 10px;
+      }
     }
   }
 }
 
 
-// social icons
-.hi-icon-wrap {
+// footer social icons
+.social-wrapper {
   text-align: center;
   margin: 0 auto;
 }
 
-.hi-icon {
+.social-icon {
   display: inline-block;
   font-size: 0px;
   cursor: pointer;
