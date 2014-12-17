@@ -1,7 +1,6 @@
 <h1>All Posts</h1>
 
 <div>
-	<% @posts.each do |post| %>	
 	<% @posts.each do |post| %>
 		<h2><%= post.title %></h2>
 		<p><%= post.body %></p>
@@ -10,9 +9,7 @@
 			<%= link_to 'Edit', edit_post_path(post), class: "btn btn-default" %>
 			<%= link_to 'Delete', post_path(post),
                     method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
-	
 		</div>
-		<% end %>
 	<% end %>
 </div>
 
