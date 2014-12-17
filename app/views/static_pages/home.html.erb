@@ -1,108 +1,113 @@
 <% provide(:title, 'Home') %>
 <span itemscope itemtype="http://schema.org/Person">
-<div id="top">
-    
-<meta itemprop="url" content="htttp://www.dillonlara.com" />
-<meta itemprop="email" content="dillonlara115@gmail.com" />
+  <div id="top">
+
+    <meta itemprop="url" content="htttp://www.dillonlara.com" />
+    <meta itemprop="email" content="dillonlara115@gmail.com" />
 
     <%= image_tag('me.jpg', size: "300", class: 'img-circle', itemprop: "image")  %>
 
-    <h2 itemprop="alternateName">Web Designer | Father | Husband | Musician</h2>
+    <h2 itemprop="alternateName">Front End Developer | Father | Husband | Musician</h2>
     <p>
-        <%= link_to "Resume", 'https://dl.dropboxusercontent.com/u/987239/dillonLaraResume.pdf', target: '_blank' %><br />
-        <%= mail_to "dillonlara115@gmail.com", nil, :itemprop => 'email', content: 'dillonlara115@gmail.com' %><br />
-        <%= link_to "github.com/dillonlara115", "http://www.github.com/dillonlara115" %>
+      <%= link_to "Resume", 'https://dl.dropboxusercontent.com/u/987239/dillonLaraResume.pdf', target: '_blank' %><br />
+      <%= mail_to "dillonlara115@gmail.com", nil, :itemprop => 'email', content: 'dillonlara115@gmail.com' %><br />
+      <%= link_to "github.com/dillonlara115", "http://www.github.com/dillonlara115" %>
     </p>
-</div>
-<section id="about">
-	<h2>About</h2>
-	<p itemprop="description">My name is <span itemprop="name">Dillon Lara</span> and currently I'm a <span itemprop="jobTitle">web designer</span> at <span itemprop="worksFor">MidwayUSA </spam>in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  While I am currently employed, I'm always looking for new and exciting opportunities as well as just wanting to build my portfolio.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
-</section>
+  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p itemprop="description">
+      My name is <span itemprop="name">Dillon Lara</span> and I'm a <span itemprop="jobTitle">Front End Developer</span> from Columbia, MO.  I graduated from Full Sail University in
+      June 2013 with a Bachelors of Science Degree in Web Design and Development.  I'm a huge tech junkie with a passion for web design and development as well as being outdoors with
+      friends and family.  While my daugther tends to consume a lot of my time, I can often be found mountain biking, hiking, or coding on a regular basis.
+    </p>
+  </section>
 
 
-<h2>Skills</h2>
-<h3>Web Design</h3>
-<p>Responsive Web Design / UI Testing / Image Optimization / Form Building / Video Optimization / Audio Optimization</p>
-<h3>Software</h3>
-<p>Sublime Text 2 / Coda 2 / Adobe Dreamweaver / Adobe Illustrator / Adobe Photoshop / Adobe Flash / Adobe FlashBuilder / Adobe Fireworks /  SequelPro / Microsoft Office Suite / iWork 2009 / Macintosh / Windows / Visual Studio</p>
-<section id="work">
-	<h1>Work</h1>
-	<p>Below lists some of my more recent work in graphic and web design.  Clicking on an image below will direct you to either a screenshot of the design, a live working version of the website if it's still activer, or to the github directory for the site.</p>
+  <h2>Skills</h2>
+  <h3>Web Design</h3>
+  <p>HTML5 / CSS3 / SASS / jQuery / AngularJS / Ruby on Rails / PHP / Wordpress / Responsive Web Design / UI Testing / Video, Audio, and Image Optimization</p>
+  <h3>Software</h3>
+  <p>Sublime Text 2 / Coda 2 / Adobe Master Suite /  SequelPro / Visual Studio</p>
+  <section id="work">
+    <h1>Work</h1>
+    <p>Below lists some of my more recent work in graphic and web design.  Clicking on an image below will direct you to either a screenshot of the design, a live working version of the website if it's still activer, or to the github directory for the site.</p>
     <div class='container'>
       <ul id="og-grid" class="og-grid">
-          <li>
-            <a href="https://github.com/dillonlara115/myList" data-largesrc="/assets/mylist.png" data-title="MyList Mobile Site" data-description="Mobile website created using Ruby on Rails and jQuery Mobile.  This was a web app created to allow users to create, customize, edit, delete and update lists such as a grocery list." target="_blank">
-              <%= image_tag('mylist.png', alt: "img03", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/soair.png" data-title="SoAir App Design" data-description="Mobile app design for mock airline 'Soair'.  Created using Adobe Illustrator and Photoshop.  All of the information visible in the mockups was provided by our instructor.  It was our job to style navigation and the entire look and feel of the application." target="_blank">
-              <%= image_tag('soair.png', alt: "img03", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html" data-largesrc="/assets/wcmo.png" data-title="WCMO Website" data-description="Webpage created for a class project with different media types.  The website is very basic, however, the media types are dynamic in the sense that depending on which browser you are using, it will display the default media type for that browser.">
-              <%= image_tag('wcmo.png', alt: "img01", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html" data-largesrc="/assets/zohome2.png" data-title="Zombie Oasis" data-description="New hire project for MidwayUSA.  Guidelines were to build a minimum 3 page website using SCSS, HTML5, and jQuery.">
-              <%= image_tag('zohome2.png', alt: "img02", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/anthem.png" data-title="My Prior Portfolio" data-description="A prior portfolio design created in one of my classes.  Also my first time practicing responsive web design.  While I'm not too keen on the look and feel of the site, it is truly repsonive and is only utilizing HTML5 and CSS3." target="_blank">
-              <%= image_tag('anthem.png', alt: "img03", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-largesrc="/assets/poster.png" data-title="The Jaguar Shark Poster" data-description="Promotional poster created for my solo music project using Photoshop." target="_blank">
-              <%= image_tag('poster.png', alt: "img01", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-largesrc="/assets/visionapp2.png" data-title="Vision Air App Web Page" data-description="Vision App landing page created for an Air application that I also created.">
-              <%= image_tag('visionapp2.png', alt: "img01", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/dillonlara115/socialSpin" data-largesrc="/assets/socialspin.jpg" data-title="Social Spin Website" data-description="This was my final project for school.  It is a social music rating website built using Ruby on Rails and bootstrap." target="_blank">
-              <%= image_tag('socialspin.jpg', alt: "img01", width: "210px") %>
-            </a>
-          </li>
-        </ul>
+        <li>
+          <a href="https://github.com/dillonlara115/socialSpin" data-largesrc="/assets/socialspin.jpg" data-title="Social Spin Website" data-description="This was my final project for school.  It is a social music rating website built using Ruby on Rails and bootstrap." target="_blank">
+            <%= image_tag('socialspin.jpg', alt: "img01", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/dillonlara115/myList" data-largesrc="/assets/mylist.png" data-title="MyList Mobile Site" data-description="Mobile website created using Ruby on Rails and jQuery Mobile.  This was a web app created to allow users to create, customize, edit, delete and update lists such as a grocery list." target="_blank">
+            <%= image_tag('mylist.png', alt: "img03", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/soair.png" data-title="SoAir App Design" data-description="Mobile app design for mock airline 'Soair'.  Created using Adobe Illustrator and Photoshop.  All of the information visible in the mockups was provided by our instructor.  It was our job to style navigation and the entire look and feel of the application." target="_blank">
+            <%= image_tag('soair.png', alt: "img03", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html" data-largesrc="/assets/wcmo.png" data-title="WCMO Website" data-description="Webpage created for a class project with different media types.  The website is very basic, however, the media types are dynamic in the sense that depending on which browser you are using, it will display the default media type for that browser.">
+            <%= image_tag('wcmo.png', alt: "img01", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://dl.dropboxusercontent.com/u/987239/pmaSite/index.html" data-largesrc="/assets/zohome2.png" data-title="Zombie Oasis" data-description="New hire project for MidwayUSA.  Guidelines were to build a minimum 3 page website using SCSS, HTML5, and jQuery.">
+            <%= image_tag('zohome2.png', alt: "img02", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://dl.dropboxusercontent.com/u/987239/wsd-project/index.html" data-largesrc="/assets/anthem.png" data-title="My Prior Portfolio" data-description="A prior portfolio design created in one of my classes.  Also my first time practicing responsive web design.  While I'm not too keen on the look and feel of the site, it is truly repsonive and is only utilizing HTML5 and CSS3." target="_blank">
+            <%= image_tag('anthem.png', alt: "img03", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-largesrc="/assets/poster.png" data-title="The Jaguar Shark Poster" data-description="Promotional poster created for my solo music project using Photoshop." target="_blank">
+            <%= image_tag('poster.png', alt: "img01", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-largesrc="/assets/visionapp2.png" data-title="Vision Air App Web Page" data-description="Vision App landing page created for an Air application that I also created.">
+            <%= image_tag('visionapp2.png', alt: "img01", width: "210px") %>
+          </a>
+        </li>
+
+      </ul>
     </div>
-</section>
+  </section>
 
-<section id="blog">
-    <h1>Blog</h1>
-     <%= link_to "Check out my blog", "http://dillon-lara-web-designer.apps.runkite.com/", target: "_blank" %>
-</section>
+  <!--<section id="blog">-->
+  <!--    <h1>Blog</h1>-->
+  <!--     <%= link_to "Check out my blog", "http://dillon-lara-web-designer.apps.runkite.com/", target: "_blank" %>-->
+  <!--</section>-->
 
-<section id="contact">
-<h1>Contact</h1>
+  <section id="contact">
+    <h1>Contact</h1>
     <form action="https://docs.google.com/forms/d/1037s7koBFq2OmEHznGFVM3grKq7bijBbOyy_5sxzzME/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="contactform">
-        <ul style="padding-left: 0">
-            <li>
-                <label  for="entry_2108790748">Name:</label>
-                <input type="text" name="entry.2108790748" value="" class="ss-q-short" id="entry_2108790748" dir="auto" aria-label="Name Enter you name in this box " aria-required="true" required="" placeholder="enter full name" title="">
-            </li>  
+      <ul style="padding-left: 0">
+        <li>
+          <label  for="entry_2108790748">Name:</label>
+          <input type="text" name="entry.2108790748" value="" class="ss-q-short" id="entry_2108790748" dir="auto" aria-label="Name Enter you name in this box " aria-required="true" required="" placeholder="enter full name" title="">
+        </li>
 
-            <li>
-                <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_389646082"> Email Address:</label>
-                <input type="text" name="entry.389646082"  id="entry_389646082" dir="auto" aria-label="email address enter your email address " aria-required="true" required="" placeholder="enter your email address" title="">
-            </li> 
-            <li>
-                <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_699952664">Message:</label>
-                <textarea name="entry.699952664" rows="8" cols="50" class="ss-q-long" id="entry_699952664" dir="auto" aria-label="Message Enter your message here " aria-required="true" required=""></textarea>
-            </li>     
-            <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]">
-            <input type="hidden" name="pageHistory" value="0">
+        <li>
+          <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_389646082"> Email Address:</label>
+          <input type="text" name="entry.389646082"  id="entry_389646082" dir="auto" aria-label="email address enter your email address " aria-required="true" required="" placeholder="enter your email address" title="">
+        </li>
+        <li>
+          <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_699952664">Message:</label>
+          <textarea name="entry.699952664" rows="8" cols="50" class="ss-q-long" id="entry_699952664" dir="auto" aria-label="Message Enter your message here " aria-required="true" required=""></textarea>
+        </li>
+        <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]">
+        <input type="hidden" name="pageHistory" value="0">
 
-            <input type="hidden" name="fbzx" value="2807431590099083065">
-     
-            <button type="submit"  value="Send" class="submit" >Send </button>     
-        </ul>
+        <input type="hidden" name="fbzx" value="2807431590099083065">
+
+        <button type="submit"  value="Send" class="submit" >Send </button>
+      </ul>
     </form>
-</section>
+  </section>
 </span>
