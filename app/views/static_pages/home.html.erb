@@ -1,7 +1,7 @@
 <% provide(:title, 'Home') %>
 <span itemscope itemtype="http://schema.org/Person">
 <div id="top">
-    
+
 <meta itemprop="url" content="htttp://www.dillonlara.com" />
 <meta itemprop="email" content="dillonlara115@gmail.com" />
 
@@ -16,20 +16,49 @@
 </div>
 <section id="about">
 	<h2>About</h2>
-	<p itemprop="description">My name is <span itemprop="name">Dillon Lara</span> and currently I'm a <span itemprop="jobTitle">web designer</span> at <span itemprop="worksFor">MidwayUSA </spam>in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  While I am currently employed, I'm always looking for new and exciting opportunities as well as just wanting to build my portfolio.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
+	<p itemprop="description">My name is <span itemprop="name">Dillon Lara</span> and currently I'm a <span itemprop="jobTitle">web designer</span> at <span itemprop="worksFor">MidwayUSA </span>in Columbia, MO.  I graduated from Full Sail University in June 2013 with a Bachelors of Science Degree in Web Design and Development.  When I'm not working or enjoying time with my beautiful wife and adorable daughter, I often turn to a nice dark beer and some quality video games.  My family and I also greatly enjoy the outdoors whether it be mountain biking or going on a hike.  I love working on websites and trying out new concepts.  I'm definitely a tech junkie and passionate about web design and development in all aspects.  If you have a project you are looking for web design help on and are truly passionate about it, I would love to meet with you to discuss how I can help you pursue your passion.  I get to do what I love for a living and would love to help someone else be able to do that as well!</p>
 </section>
 
 
 <h2>Skills</h2>
 <h3>Web Design</h3>
-<p>Responsive Web Design / UI Testing / Image Optimization / Form Building / Video Optimization / Audio Optimization</p>
+<p>HTML5 / CSS3 / SASS / jQuery / AngularJS / Responsive Web Design / UI Testing / Image Optimization / Form Building / Video Optimization & Audio Optimization</p>
 <h3>Software</h3>
-<p>Sublime Text 2 / Coda 2 / Adobe Dreamweaver / Adobe Illustrator / Adobe Photoshop / Adobe Flash / Adobe FlashBuilder / Adobe Fireworks /  SequelPro / Microsoft Office Suite / iWork 2009 / Macintosh / Windows / Visual Studio</p>
+<p>Sublime Text 2 / Coda 2 / Adobe Creative Suite /  SequelPro / Macintosh / Windows / Visual Studio</p>
+
 <section id="work">
+  <h1>Work</h1>
+  <p>Below lists some of my more recent work in graphic and web design.  Clicking on an image below will direct you to either a screenshot of the design, a live working version of the website if it's still activer, or to the github directory for the site.</p>
+
+  <ul>
+    <li>
+      <figure class="work-item">
+        <%= image_tag('visionapp2.png', alt: "Speed Outfitters") %>
+        <figcaption>
+            <h2>Speed Outfitters</h2>
+            <p>Motorsport Apparel website. Built with AngularJS, ectJS, HTML and css using bootstrap 3 and bootstrap 2 for the admin site.</p>
+          <a href="#">View Site</a>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+</section>
+
+<!-- <section id="work">
 	<h1>Work</h1>
 	<p>Below lists some of my more recent work in graphic and web design.  Clicking on an image below will direct you to either a screenshot of the design, a live working version of the website if it's still activer, or to the github directory for the site.</p>
     <div class='container'>
       <ul id="og-grid" class="og-grid">
+        <li>
+          <a href="#" data-largesrc="/assets/visionapp2.png" data-title="Speed Outfitters" data-description="Motorsport Apparel website. Built with AngularJS, ectJS, HTML and css using bootstrap 3 and bootstrap 2 for the admin site.">
+            <%= image_tag('visionapp2.png', alt: "img01", width: "210px") %>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/dillonlara115/socialSpin" data-largesrc="/assets/socialspin.jpg" data-title="Social Spin Website" data-description="This was my final project for school.  It is a social music rating website built using Ruby on Rails and bootstrap." target="_blank">
+            <%= image_tag('socialspin.jpg', alt: "img01", width: "210px") %>
+          </a>
+        </li>
           <li>
             <a href="https://github.com/dillonlara115/myList" data-largesrc="/assets/mylist.png" data-title="MyList Mobile Site" data-description="Mobile website created using Ruby on Rails and jQuery Mobile.  This was a web app created to allow users to create, customize, edit, delete and update lists such as a grocery list." target="_blank">
               <%= image_tag('mylist.png', alt: "img03", width: "210px") %>
@@ -60,24 +89,15 @@
               <%= image_tag('poster.png', alt: "img01", width: "210px") %>
             </a>
           </li>
-          <li>
-            <a href="#" data-largesrc="/assets/visionapp2.png" data-title="Vision Air App Web Page" data-description="Vision App landing page created for an Air application that I also created.">
-              <%= image_tag('visionapp2.png', alt: "img01", width: "210px") %>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/dillonlara115/socialSpin" data-largesrc="/assets/socialspin.jpg" data-title="Social Spin Website" data-description="This was my final project for school.  It is a social music rating website built using Ruby on Rails and bootstrap." target="_blank">
-              <%= image_tag('socialspin.jpg', alt: "img01", width: "210px") %>
-            </a>
-          </li>
+
         </ul>
     </div>
-</section>
+</section> -->
 
-<section id="blog">
+<!-- <section id="blog">
     <h1>Blog</h1>
      <%= link_to "Check out my blog", "http://dillon-lara-web-designer.apps.runkite.com/", target: "_blank" %>
-</section>
+</section> -->
 
 <section id="contact">
 <h1>Contact</h1>
@@ -86,22 +106,22 @@
             <li>
                 <label  for="entry_2108790748">Name:</label>
                 <input type="text" name="entry.2108790748" value="" class="ss-q-short" id="entry_2108790748" dir="auto" aria-label="Name Enter you name in this box " aria-required="true" required="" placeholder="enter full name" title="">
-            </li>  
+            </li>
 
             <li>
                 <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_389646082"> Email Address:</label>
                 <input type="text" name="entry.389646082"  id="entry_389646082" dir="auto" aria-label="email address enter your email address " aria-required="true" required="" placeholder="enter your email address" title="">
-            </li> 
+            </li>
             <li>
                 <label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_699952664">Message:</label>
                 <textarea name="entry.699952664" rows="8" cols="50" class="ss-q-long" id="entry_699952664" dir="auto" aria-label="Message Enter your message here " aria-required="true" required=""></textarea>
-            </li>     
+            </li>
             <input type="hidden" name="draftResponse" value="[,,&quot;2807431590099083065&quot;]">
             <input type="hidden" name="pageHistory" value="0">
 
             <input type="hidden" name="fbzx" value="2807431590099083065">
-     
-            <button type="submit"  value="Send" class="submit" >Send </button>     
+
+            <button type="submit"  value="Send" class="submit" >Send </button>
         </ul>
     </form>
 </section>
