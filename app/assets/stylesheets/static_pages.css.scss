@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+<<<<<<< HEAD
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
@@ -134,8 +135,72 @@
 		vertical-align: top;
 		height: 250px;
 	}
+||||||| d633cdb... init commit
+.work-item {
+	cursor: pointer;
+	position: relative;
+	h2 {
+		position: absolute;
+		top: 1em;
+		left: 1em;
+	}
+	p, a {
+		display: none;
+	}
+	img {
+		max-width: 600px;
+		width: 100%;
+	}
+
+	&:hover {
+		p, a {
+			display: inline-block;
+			position: absolute;
+		}
+		p {
+			bottom: 2em;
+			left:1em;
+			width: 90%;
+			max-width: 600px;
+		}
+		a {
+			bottom: 1em;
+			right: 1em;
+		}
+	}
 }
 
+
+
+
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	li {
+		display: inline-block;
+		margin: 10px 5px 0 5px;
+		vertical-align: top;
+		height: 250px;
+	}
+=======
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+>>>>>>> parent of d633cdb... init commit
+}
+
+.og-grid li {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	height: 250px;
+}
 
 .og-grid li > a,
 .og-grid li > a img {
@@ -317,6 +382,7 @@
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 }
 ||||||| 4e62eca... Merge branch 'master'
@@ -334,3 +400,10 @@
 
 }
 >>>>>>> parent of 4e62eca... Merge branch 'master'
+||||||| d633cdb... init commit
+
+}
+=======
+	
+}
+>>>>>>> parent of d633cdb... init commit
